@@ -2,6 +2,8 @@
 
 Create React apps with no build configuration.
 
+创建React应用程序，无需编译配置
+
 * [Creating an App](#creating-an-app) – How to create a new app.
 * [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.
 
