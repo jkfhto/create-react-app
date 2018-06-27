@@ -65,7 +65,7 @@ yarn create react-app my-app
 *`yarn create` is available in Yarn 0.25+*
 
 It will create a directory called `my-app` inside the current folder.<br>
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+Inside that directory, it will generate the initial project structure and install the transitive dependencies:<br>它会在当前文件夹内创建一个名为my-app的目录。在该目录内，它将生成初始项目结构并安装依赖项：
 
 ```
 my-app
@@ -88,21 +88,22 @@ my-app
 ```
 
 No configuration or complicated folder structures, just the files you need to build your app.<br>
-Once the installation is done, you can open your project folder:
+Once the installation is done, you can open your project folder:<br>没有配置或复杂的文件夹结构，只需要构建应用程序所需的文件。
+安装完成后，您可以打开项目文件夹：
 
 ```sh
 cd my-app
 ```
 
-Inside the newly created project, you can run some built-in commands:
+Inside the newly created project, you can run some built-in commands:<br>在新创建的项目中，您可以运行一些内置命令
 
 ### `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>以开发模式运行应用程序。 打开http：// localhost：3000在浏览器中查看它
 
 The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
+You will see the build errors and lint warnings in the console.<br>如果您更改了代码，该页面将自动重新加载。 您将在控制台中看到构建错误和lint警告。
 
 <p align='center'>
 <img src='https://cdn.rawgit.com/marionebl/create-react-app/9f62826/screencast-error.svg' width='600' alt='Build errors'>
