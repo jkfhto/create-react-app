@@ -1,4 +1,4 @@
-# Create React App [![Build Status](https://travis-ci.org/facebook/create-react-app.svg?branch=master)](https://travis-ci.org/facebook/create-react-app)
+ # Create React App [![Build Status](https://travis-ci.org/facebook/create-react-app.svg?branch=master)](https://travis-ci.org/facebook/create-react-app)
 
 Create React apps with no build configuration.
 
@@ -12,7 +12,7 @@ Create React apps with no build configuration.
 Create React App works on macOS, Windows, and Linux.<br>创建可在macOS，Windows和Linux上运行的React App<br><br>
 If something doesn’t work, please [file an issue](https://github.com/facebook/create-react-app/issues/new).<br>如果出现问题，请提交问题
 
-## Quick Overview
+## Quick Overview  快速概览
 
 ```sh
 npx create-react-app my-app
@@ -22,17 +22,17 @@ npm start
 
 *([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))*
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
-When you’re ready to deploy to production, create a minified bundle with `npm run build`.
+Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>Then open http://localhost:3000/ to see your app.<br><br>
+When you’re ready to deploy to production, create a minified bundle with `npm run build`.<br>您准备好部署到生产环境时，请使用npm run build创建压缩包
 
 <p align='center'>
 <img src='https://cdn.rawgit.com/facebook/create-react-app/27b42ac/screencast.svg' width='600' alt='npm start'>
 </p>
 
-### Get Started Immediately
+### Get Started Immediately  开始
 
-You **don’t** need to install or configure tools like Webpack or Babel.<br>
-They are preconfigured and hidden so that you can focus on the code.
+You **don’t** need to install or configure tools like Webpack or Babel.<br>你不需要安装或配置像Webpack或Babel这样的工具<br><br>
+They are preconfigured and hidden so that you can focus on the code.<br>它们已预先配置并隐藏，以便您可以专注于代码
 
 Just create a project, and you’re good to go.
 
