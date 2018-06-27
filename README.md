@@ -9,7 +9,7 @@ Create React apps with no build configuration.
 
 
 
-Create React App works on macOS, Windows, and Linux.<br>创建可在macOS，Windows和Linux上运行的React App
+Create React App works on macOS, Windows, and Linux.<br>创建可在macOS，Windows和Linux上运行的React App<br>
 If something doesn’t work, please [file an issue](https://github.com/facebook/create-react-app/issues/new).<br>如果出现问题，请提交问题
 
 ## Quick Overview
