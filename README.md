@@ -100,7 +100,7 @@ Inside the newly created project, you can run some built-in commands:<br>在新�
 ### `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>以开发模式运行应用程序。 打开http：// localhost：3000在浏览器中查看它
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.<br>以开发模式运行应用程序。 在浏览器中打开http：// localhost：3000查看它
 
 The page will automatically reload if you make changes to the code.<br>
 You will see the build errors and lint warnings in the console.<br>如果您更改了代码，该页面将自动重新加载。 您将在控制台中看到构建错误和lint警告。
@@ -112,21 +112,23 @@ You will see the build errors and lint warnings in the console.<br>如果您更�
 ### `npm test` or `yarn test`
 
 Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changed since the last commit.
+By default, runs tests related to files changed since the last commit.<br>以交互模式运行测试观察器。
+默认情况下，运行与上次提交后更改的文件相关的测试。
 
 [Read more about testing.](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
 
 ### `npm run build` or `yarn build`
 
 Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React in production mode and optimizes the build for the best performance.<br>将生成的应用程序构建到build文件夹。
+它在生产模式下正确捆绑React并优化构建以获得最佳性能。
 
 The build is minified and the filenames include the hashes.<br>
-By default, it also [includes a service worker](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app) so that your app loads from local cache on future visits.
+By default, it also [includes a service worker](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app) so that your app loads from local cache on future visits.<br>构建被缩小，文件名包含hashes。 默认情况下，它还包含service worker，以便您的应用程序在未来访问时从本地缓存加载
 
-Your app is ready to be deployed.
+Your app is ready to be deployed.  您的应用已准备好进行部署了。
 
-## User Guide
+## User Guide  用户指南
 
 The [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) includes information on different topics, such as:
 
