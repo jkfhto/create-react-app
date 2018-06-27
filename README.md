@@ -36,11 +36,11 @@ They are preconfigured and hidden so that you can focus on the code.<br>它们�
 
 Just create a project, and you’re good to go.
 
-## Creating an App
+## Creating an App  创建应用程序
 
-**You’ll need to have Node >= 6 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.
+**You’ll need to have Node >= 6 on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to easily switch Node versions between different projects.<br>您需要在本地开发机器上安装Node6及以上版本（但服务器上不需要）。 您可以使用[nvm]或[nvm-windows]在不同项目之间轻松切换Node版本。
 
-To create a new app, you may choose one of the following methods:
+To create a new app, you may choose one of the following methods:<br>要创建一个新的应用程序，您可以选择以下方法之一：
 
 ### npx
 
