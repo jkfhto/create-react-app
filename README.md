@@ -4,8 +4,10 @@ Create React apps with no build configuration.
 
 创建React应用程序，无需编译配置
 
-* [Creating an App](#creating-an-app) – How to create a new app.
-* [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.
+* [Creating an App](#creating-an-app) – How to create a new app.    如何创建一个新的应用程序
+* [User Guide](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) – How to develop apps bootstrapped with Create React App.  如何使用Create React App开发应用程序
+
+
 
 Create React App works on macOS, Windows, and Linux.<br>
 If something doesn’t work, please [file an issue](https://github.com/facebook/create-react-app/issues/new).
