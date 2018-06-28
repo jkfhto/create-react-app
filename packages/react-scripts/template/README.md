@@ -1,107 +1,108 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).<br>下面你会发现一些关于如何执行常见任务的信息。
+Below you will find some information on how to perform common tasks.<br>下面你会发现一些关于如何执行常见任务的说明。<br>
+You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).<br>
 您可以在这里找到本指南的最新版本。
 
-## Table of Contents
+## Table of Contents  目录
 
-- [Updating to New Releases](#updating-to-new-releases)
-- [Sending Feedback](#sending-feedback)
-- [Folder Structure](#folder-structure)
-- [Available Scripts](#available-scripts)
+- [Updating to New Releases](#updating-to-new-releases)  更新到新版本
+- [Sending Feedback](#sending-feedback)  发送反馈
+- [Folder Structure](#folder-structure)  文件夹结构
+- [Available Scripts](#available-scripts)  可用的脚本
   - [npm start](#npm-start)
   - [npm test](#npm-test)
   - [npm run build](#npm-run-build)
   - [npm run eject](#npm-run-eject)
-- [Supported Browsers](#supported-browsers)
-- [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)
-- [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor)
-- [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor)
-- [Debugging in the Editor](#debugging-in-the-editor)
-- [Formatting Code Automatically](#formatting-code-automatically)
-- [Changing the Page `<title>`](#changing-the-page-title)
-- [Installing a Dependency](#installing-a-dependency)
-- [Importing a Component](#importing-a-component)
-- [Code Splitting](#code-splitting)
-- [Adding a Stylesheet](#adding-a-stylesheet)
-- [Post-Processing CSS](#post-processing-css)
-- [Adding a CSS Preprocessor (Sass, Less etc.)](#adding-a-css-preprocessor-sass-less-etc)
-- [Adding Images, Fonts, and Files](#adding-images-fonts-and-files)
-- [Using the `public` Folder](#using-the-public-folder)
-  - [Changing the HTML](#changing-the-html)
-  - [Adding Assets Outside of the Module System](#adding-assets-outside-of-the-module-system)
-  - [When to Use the `public` Folder](#when-to-use-the-public-folder)
-- [Using Global Variables](#using-global-variables)
-- [Adding Bootstrap](#adding-bootstrap)
-  - [Using a Custom Theme](#using-a-custom-theme)
-- [Adding Flow](#adding-flow)
-- [Adding a Router](#adding-a-router)
-- [Adding Custom Environment Variables](#adding-custom-environment-variables)
-  - [Referencing Environment Variables in the HTML](#referencing-environment-variables-in-the-html)
-  - [Adding Temporary Environment Variables In Your Shell](#adding-temporary-environment-variables-in-your-shell)
-  - [Adding Development Environment Variables In `.env`](#adding-development-environment-variables-in-env)
-- [Can I Use Decorators?](#can-i-use-decorators)
-- [Fetching Data with AJAX Requests](#fetching-data-with-ajax-requests)
-- [Integrating with an API Backend](#integrating-with-an-api-backend)
+- [Supported Browsers](#supported-browsers)  支持的浏览器
+- [Supported Language Features and Polyfills](#supported-language-features-and-polyfills)  支持的语言功能和Polyfills
+- [Syntax Highlighting in the Editor](#syntax-highlighting-in-the-editor)  语法在编辑器中突出显示
+- [Displaying Lint Output in the Editor](#displaying-lint-output-in-the-editor)  在编辑器中显示Lint输出
+- [Debugging in the Editor](#debugging-in-the-editor)  在编辑器中调试
+- [Formatting Code Automatically](#formatting-code-automatically)  自动格式化代码
+- [Changing the Page `<title>`](#changing-the-page-title)  改变页面<title>
+- [Installing a Dependency](#installing-a-dependency)  安装依赖项
+- [Importing a Component](#importing-a-component)  导入组件
+- [Code Splitting](#code-splitting)  代码拆分
+- [Adding a Stylesheet](#adding-a-stylesheet)  添加样式表
+- [Post-Processing CSS](#post-processing-css)  CSS后处理
+- [Adding a CSS Preprocessor (Sass, Less etc.)](#adding-a-css-preprocessor-sass-less-etc)  添加一个CSS预处理器（Sass，Less等）
+- [Adding Images, Fonts, and Files](#adding-images-fonts-and-files)  添加图像，字体和文件
+- [Using the `public` Folder](#using-the-public-folder)  使用public文件夹
+  - [Changing the HTML](#changing-the-html)  更改HTML
+  - [Adding Assets Outside of the Module System](#adding-assets-outside-of-the-module-system)  在模块系统之外添加文件
+  - [When to Use the `public` Folder](#when-to-use-the-public-folder)  何时使用public文件夹
+- [Using Global Variables](#using-global-variables)  使用全局变量
+- [Adding Bootstrap](#adding-bootstrap)  添加Bootstrap
+  - [Using a Custom Theme](#using-a-custom-theme)  使用自定义主题
+- [Adding Flow](#adding-flow)  添加Flow
+- [Adding a Router](#adding-a-router)  添加一个路由器
+- [Adding Custom Environment Variables](#adding-custom-environment-variables)  添加自定义环境变量
+  - [Referencing Environment Variables in the HTML](#referencing-environment-variables-in-the-html)  在HTML中引用环境变量
+  - [Adding Temporary Environment Variables In Your Shell](#adding-temporary-environment-variables-in-your-shell)  在Shell中添加临时环境变量
+  - [Adding Development Environment Variables In `.env`](#adding-development-environment-variables-in-env)  在.env中添加开发环境变量
+- [Can I Use Decorators?](#can-i-use-decorators)  我可以使用装饰者吗？
+- [Fetching Data with AJAX Requests](#fetching-data-with-ajax-requests)  通过AJAX请求获取数据
+- [Integrating with an API Backend](#integrating-with-an-api-backend)  与API后端集成
   - [Node](#node)
   - [Ruby on Rails](#ruby-on-rails)
-- [Proxying API Requests in Development](#proxying-api-requests-in-development)
-  - ["Invalid Host Header" Errors After Configuring Proxy](#invalid-host-header-errors-after-configuring-proxy)
-  - [Configuring the Proxy Manually](#configuring-the-proxy-manually)
-  - [Configuring a WebSocket Proxy](#configuring-a-websocket-proxy)
-- [Using HTTPS in Development](#using-https-in-development)
-- [Generating Dynamic `<meta>` Tags on the Server](#generating-dynamic-meta-tags-on-the-server)
-- [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files)
-- [Injecting Data from the Server into the Page](#injecting-data-from-the-server-into-the-page)
-- [Running Tests](#running-tests)
-  - [Filename Conventions](#filename-conventions)
-  - [Command Line Interface](#command-line-interface)
-  - [Version Control Integration](#version-control-integration)
-  - [Writing Tests](#writing-tests)
-  - [Testing Components](#testing-components)
-  - [Using Third Party Assertion Libraries](#using-third-party-assertion-libraries)
-  - [Initializing Test Environment](#initializing-test-environment)
-  - [Focusing and Excluding Tests](#focusing-and-excluding-tests)
-  - [Coverage Reporting](#coverage-reporting)
-  - [Continuous Integration](#continuous-integration)
-  - [Disabling jsdom](#disabling-jsdom)
-  - [Snapshot Testing](#snapshot-testing)
-  - [Editor Integration](#editor-integration)
-- [Debugging Tests](#debugging-tests)
-  - [Debugging Tests in Chrome](#debugging-tests-in-chrome)
-  - [Debugging Tests in Visual Studio Code](#debugging-tests-in-visual-studio-code)
-- [Developing Components in Isolation](#developing-components-in-isolation)
-  - [Getting Started with Storybook](#getting-started-with-storybook)
-  - [Getting Started with Styleguidist](#getting-started-with-styleguidist)
-- [Publishing Components to npm](#publishing-components-to-npm)
-- [Making a Progressive Web App](#making-a-progressive-web-app)
-  - [Opting Out of Caching](#opting-out-of-caching)
-  - [Offline-First Considerations](#offline-first-considerations)
-  - [Progressive Web App Metadata](#progressive-web-app-metadata)
-- [Analyzing the Bundle Size](#analyzing-the-bundle-size)
-- [Deployment](#deployment)
-  - [Static Server](#static-server)
-  - [Other Solutions](#other-solutions)
-  - [Serving Apps with Client-Side Routing](#serving-apps-with-client-side-routing)
-  - [Building for Relative Paths](#building-for-relative-paths)
+- [Proxying API Requests in Development](#proxying-api-requests-in-development)  在开发中代理API请求
+  - ["Invalid Host Header" Errors After Configuring Proxy](#invalid-host-header-errors-after-configuring-proxy)  配置代理服务器后出现“主机头无效”错误
+  - [Configuring the Proxy Manually](#configuring-the-proxy-manually)  手动配置代理
+  - [Configuring a WebSocket Proxy](#configuring-a-websocket-proxy)  配置WebSocket代理
+- [Using HTTPS in Development](#using-https-in-development)  在开发中使用HTTPS
+- [Generating Dynamic `<meta>` Tags on the Server](#generating-dynamic-meta-tags-on-the-server)  在服务器上生成动态<meta>标签
+- [Pre-Rendering into Static HTML Files](#pre-rendering-into-static-html-files)  预渲染到静态HTML文件
+- [Injecting Data from the Server into the Page](#injecting-data-from-the-server-into-the-page)  将数据从服务器注入页面
+- [Running Tests](#running-tests)  运行测试
+  - [Filename Conventions](#filename-conventions)  文件名约定
+  - [Command Line Interface](#command-line-interface)  命令行界面
+  - [Version Control Integration](#version-control-integration)  版本控制集成
+  - [Writing Tests](#writing-tests)  编写测试
+  - [Testing Components](#testing-components)  测试组件
+  - [Using Third Party Assertion Libraries](#using-third-party-assertion-libraries)  使用第三方库
+  - [Initializing Test Environment](#initializing-test-environment)  初始化测试环境
+  - [Focusing and Excluding Tests](#focusing-and-excluding-tests)  聚焦和排除测试
+  - [Coverage Reporting](#coverage-reporting)  覆盖率报告
+  - [Continuous Integration](#continuous-integration)  持续集成
+  - [Disabling jsdom](#disabling-jsdom)  禁用jsdom
+  - [Snapshot Testing](#snapshot-testing)  快照测试
+  - [Editor Integration](#editor-integration)  编辑器集成
+- [Debugging Tests](#debugging-tests)  调试测试
+  - [Debugging Tests in Chrome](#debugging-tests-in-chrome)  在Chrome中调试测试
+  - [Debugging Tests in Visual Studio Code](#debugging-tests-in-visual-studio-code)  在Visual Studio代码中调试测试
+- [Developing Components in Isolation](#developing-components-in-isolation)  在隔离中开发组件
+  - [Getting Started with Storybook](#getting-started-with-storybook)  入门故事书
+  - [Getting Started with Styleguidist](#getting-started-with-styleguidist)  Styleguidist入门
+- [Publishing Components to npm](#publishing-components-to-npm)  将组件发布到npm
+- [Making a Progressive Web App](#making-a-progressive-web-app)  制作渐进式Web应用程序
+  - [Opting Out of Caching](#opting-out-of-caching)  停用缓存
+  - [Offline-First Considerations](#offline-first-considerations)  离线优先考虑事项
+  - [Progressive Web App Metadata](#progressive-web-app-metadata)  渐进式Web应用程序元数据
+- [Analyzing the Bundle Size](#analyzing-the-bundle-size)  分析Bundle大小
+- [Deployment](#deployment)  部署
+  - [Static Server](#static-server)  静态服务器
+  - [Other Solutions](#other-solutions)  其他解决方案
+  - [Serving Apps with Client-Side Routing](#serving-apps-with-client-side-routing)  使用客户端路由服务应用程序
+  - [Building for Relative Paths](#building-for-relative-paths)  建立相对路径
   - [Azure](#azure)
   - [Firebase](#firebase)
-  - [GitHub Pages](#github-pages)
+  - [GitHub Pages](#github-pages)  
   - [Heroku](#heroku)
   - [Netlify](#netlify)
   - [Now](#now)
   - [S3 and CloudFront](#s3-and-cloudfront)
   - [Surge](#surge)
-- [Advanced Configuration](#advanced-configuration)
-- [Troubleshooting](#troubleshooting)
-  - [`npm start` doesn’t detect changes](#npm-start-doesnt-detect-changes)
-  - [`npm test` hangs on macOS Sierra](#npm-test-hangs-on-macos-sierra)
-  - [`npm run build` exits too early](#npm-run-build-exits-too-early)
-  - [`npm run build` fails on Heroku](#npm-run-build-fails-on-heroku)
-  - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
-  - [Moment.js locales are missing](#momentjs-locales-are-missing)
-- [Alternatives to Ejecting](#alternatives-to-ejecting)
+- [Advanced Configuration](#advanced-configuration)  高级配置
+- [Troubleshooting](#troubleshooting)  故障排除
+  - [`npm start` doesn’t detect changes](#npm-start-doesnt-detect-changes)  npm start不检测更改
+  - [`npm test` hangs on macOS Sierra](#npm-test-hangs-on-macos-sierra)  npm测试挂在macOS Sierra上
+  - [`npm run build` exits too early](#npm-run-build-exits-too-early)  npm run build退出太早
+  - [`npm run build` fails on Heroku](#npm-run-build-fails-on-heroku)  在Heroku上npm运行构建失败
+  - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)  npm线上版本无法缩小
+  - [Moment.js locales are missing](#momentjs-locales-are-missing)  Moment.js语言环境缺失
+- [Alternatives to Ejecting](#alternatives-to-ejecting)  替代Ejecting
+
 - [Something Missing?](#something-missing)
 
 ## Updating to New Releases
