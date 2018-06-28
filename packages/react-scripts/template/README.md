@@ -170,47 +170,47 @@ In the project directory, you can run:  在项目目录中，您可以运行
 
 ### `npm start`
 
-Runs the app in the development mode.<br>在开发模式下运行应用程序。
+Runs the app in the development mode.<br>在开发模式下运行应用程序。<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.在浏览器中打开http：// localhost：3000查看它。
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The page will reload if you make edits.<br>如果您进行编辑，该页面将重新加载<br>
+You will also see any lint errors in the console.您还将在控制台中看到任何lint错误
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+Launches the test runner in the interactive watch mode.<br>以交互式观察模式启动测试运行器<br>
+See the section about [running tests](#running-tests) for more information.有关更多信息，请参阅运行测试的部分
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder.<br>将生成的应用程序构建到build文件夹<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.它在生产模式下正确绑定React并优化构建以获得最佳性能
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+The build is minified and the filenames include the hashes.<br>文件被压缩并且文件名包括hashes值<br>
+Your app is ready to be deployed!<br>您的应用已准备好进行部署！
 
-See the section about [deployment](#deployment) for more information.
+See the section about [deployment](#deployment) for more information.有关更多信息，请参阅部署的部分
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**<br>注意：这是一个单向操作。一旦你运行eject，你不能回去
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.<br>如果您对构建工具和配置选择不满意，则可以随时eject。该命令将从您的项目中删除单个构建依赖项
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.<br>相反，它会将所有配置文件和传递依赖项（Webpack，Babel，ESLint等）直接复制到项目中，以便完全控制它们。除eject以外的所有命令仍然有效，但它们将指向复制的脚本，以便您可以调整它们。在这一点上，你是独立的
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.<br>您不必使用eject。这个功能集适用于中小型部署，您不应该觉得有义务使用此功能。但是我们知道，如果您在准备好时无法自定义该工具，则此工具无用
 
-## Supported Browsers
+## Supported Browsers  支持的浏览器
 
-By default, the generated project uses the latest version of React.
+By default, the generated project uses the latest version of React.<br>默认情况下，生成的项目使用最新版本的React
 
-You can refer [to the React documentation](https://reactjs.org/docs/react-dom.html#browser-support) for more information about supported browsers.
+You can refer [to the React documentation](https://reactjs.org/docs/react-dom.html#browser-support) for more information about supported browsers.<br>有关支持的浏览器的更多信息，请参阅React文档
 
-## Supported Language Features and Polyfills
+## Supported Language Features and Polyfills  支持的语言功能和Polyfills
 
-This project supports a superset of the latest JavaScript standard.<br>
-In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:
+This project supports a superset of the latest JavaScript standard.<br>该项目支持最新JavaScript标准的超集<br>
+In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, it also supports:<br>除了ES6语法功能外，它还支持
 
 * [Exponentiation Operator](https://github.com/rwaldron/exponentiation-operator) (ES2016).
 * [Async/await](https://github.com/tc39/ecmascript-asyncawait) (ES2017).
@@ -219,23 +219,23 @@ In addition to [ES6](https://github.com/lukehoban/es6features) syntax features, 
 * [Class Fields and Static Properties](https://github.com/tc39/proposal-class-public-fields) (part of stage 3 proposal).
 * [JSX](https://facebook.github.io/react/docs/introducing-jsx.html) and [Flow](https://flowtype.org/) syntax.
 
-Learn more about [different proposal stages](https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-).
+Learn more about [different proposal stages](https://babeljs.io/docs/plugins/#presets-stage-x-experimental-presets-).详细了解不同的提案阶段
 
-While we recommend using experimental proposals with some caution, Facebook heavily uses these features in the product code, so we intend to provide [codemods](https://medium.com/@cpojer/effective-javascript-codemods-5a6686bb46fb) if any of these proposals change in the future.
+While we recommend using experimental proposals with some caution, Facebook heavily uses these features in the product code, so we intend to provide [codemods](https://medium.com/@cpojer/effective-javascript-codemods-5a6686bb46fb) if any of these proposals change in the future.<br>尽管我们建议谨慎使用试验性提案，但Facebook在产品代码中大量使用这些功能，因此如果将来任何提案发生变化，我们都打算提供codemods
 
-Note that **the project only includes a few ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:
+Note that **the project only includes a few ES6 [polyfills](https://en.wikipedia.org/wiki/Polyfill)**:<br>请注意，该项目仅包含一些ES6 polyfills
 
 * [`Object.assign()`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/assign) via [`object-assign`](https://github.com/sindresorhus/object-assign).
 * [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) via [`promise`](https://github.com/then/promise).
 * [`fetch()`](https://developer.mozilla.org/en/docs/Web/API/Fetch_API) via [`whatwg-fetch`](https://github.com/github/fetch).
 
-If you use any other ES6+ features that need **runtime support** (such as `Array.from()` or `Symbol`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.
+If you use any other ES6+ features that need **runtime support** (such as `Array.from()` or `Symbol`), make sure you are including the appropriate polyfills manually, or that the browsers you are targeting already support them.<br>如果您使用任何需要运行时支持的其他ES6 +功能（例如Array.from（）或Symbol），请确保手动包含适当的polyfills，或者您所定位的浏览器已经支持它们
 
-Also note that using some newer syntax features like `for...of` or `[...nonArrayValue]` causes Babel to emit code that depends on ES6 runtime features and might not work without a polyfill. When in doubt, use [Babel REPL](https://babeljs.io/repl/) to see what any specific syntax compiles down to.
+Also note that using some newer syntax features like `for...of` or `[...nonArrayValue]` causes Babel to emit code that depends on ES6 runtime features and might not work without a polyfill. When in doubt, use [Babel REPL](https://babeljs.io/repl/) to see what any specific syntax compiles down to.<br>还要注意，使用一些更新的语法特性，例如`for...of` 或者 `[...nonArrayValue]`会导致Babel发出取决于ES6运行时功能的代码，并且在没有polyfill的情况下可能无法运行。如有疑问，请使用Babel REPL查看任何特定语法编译的内容
 
-## Syntax Highlighting in the Editor
+## Syntax Highlighting in the Editor  语法在编辑器中突出显示
 
-To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.
+To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.<br>要在您最喜欢的文本编辑器中配置语法高亮显示，请前往相关的Babel文档页面并按照说明进行操作。涵盖了一些最受欢迎的编辑
 
 ## Displaying Lint Output in the Editor
 
