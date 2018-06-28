@@ -164,14 +164,14 @@ Read instructions below for using assets from JavaScript and HTML.<br>阅读下�
 You can, however, create more top-level directories.<br>但是，您可以创建更多顶级目录<br>
 They will not be included in the production build so you can use them for things like documentation.<br>它们不会包含在生产版本中，因此您可以将它们用于文档等内容
 
-## Available Scripts
+## Available Scripts  可用的脚本
 
-In the project directory, you can run:
+In the project directory, you can run:  在项目目录中，您可以运行
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode.<br>在开发模式下运行应用程序。
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.在浏览器中打开http：// localhost：3000查看它。
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
