@@ -359,34 +359,34 @@ Next you might want to integrate Prettier in your favorite editor. Read the sect
 
 ## Changing the Page `<title>`  改变页面<title>
 
-You can find the source HTML file in the `public` folder of the generated project. You may edit the `<title>` tag in it to change the title from “React App” to anything else.
+You can find the source HTML file in the `public` folder of the generated project. You may edit the `<title>` tag in it to change the title from “React App” to anything else.<br>您可以在生成的项目的`public`文件夹中找到源HTML文件。您可以编辑其中的<title>标签以将标题从“React App”更改为其他任何内容
 
-Note that normally you wouldn’t edit files in the `public` folder very often. For example, [adding a stylesheet](#adding-a-stylesheet) is done without touching the HTML.
+Note that normally you wouldn’t edit files in the `public` folder very often. For example, [adding a stylesheet](#adding-a-stylesheet) is done without touching the HTML.<br>请注意，通常情况下，您不会经常在`public`文件夹中编辑文件。例如，[adding a stylesheet]完成时不会触及HTML
 
-If you need to dynamically update the page title based on the content, you can use the browser [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, you can use [React Helmet](https://github.com/nfl/react-helmet), a third party library.
+If you need to dynamically update the page title based on the content, you can use the browser [`document.title`](https://developer.mozilla.org/en-US/docs/Web/API/Document/title) API. For more complex scenarios when you want to change the title from React components, you can use [React Helmet](https://github.com/nfl/react-helmet), a third party library.<br>如果您需要根据内容动态更新页面标题，则可以使用浏览器document.title API。对于更复杂的场景，当您想要从React组件更改标题时，可以使用React Helmet（第三方库）
 
-If you use a custom server for your app in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).
+If you use a custom server for your app in production and want to modify the title before it gets sent to the browser, you can follow advice in [this section](#generating-dynamic-meta-tags-on-the-server). Alternatively, you can pre-build each page as a static HTML file which then loads the JavaScript bundle, which is covered [here](#pre-rendering-into-static-html-files).<br>如果您在生产环境中为自己的应用使用自定义服务器，并且想在发送给浏览器之前修改标题，则可以按照[this section]的建议操作。或者，您可以预先将每个页面构建为静态HTML文件，然后加载JavaScript包，这在[here]介绍
 
-## Installing a Dependency
+## Installing a Dependency  安装依赖项
 
-The generated project includes React and ReactDOM as dependencies. It also includes a set of scripts used by Create React App as a development dependency. You may install other dependencies (for example, React Router) with `npm`:
+The generated project includes React and ReactDOM as dependencies. It also includes a set of scripts used by Create React App as a development dependency. You may install other dependencies (for example, React Router) with `npm`:<br>生成的项目包括React和ReactDOM作为依赖关系。它还包含一组由Create React App用作开发依赖项的脚本。您可以使用npm安装其他依赖项（例如，React Router）
 
 ```sh
 npm install --save react-router
 ```
 
-Alternatively you may use `yarn`:
+Alternatively you may use `yarn`:<br>或者你可以使用`yarn`：
 
 ```sh
 yarn add react-router
 ```
 
-This works for any library, not just `react-router`.
+This works for any library, not just `react-router`.这适用于任何文件，而不仅仅是`react-router`
 
-## Importing a Component
+## Importing a Component  导入组件
 
-This project setup supports ES6 modules thanks to Babel.<br>
-While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.
+This project setup supports ES6 modules thanks to Babel.<br>感谢Babel，此项目设置支持ES6模块<br>
+While you can still use `require()` and `module.exports`, we encourage you to use [`import` and `export`](http://exploringjs.com/es6/ch_modules.html) instead.<br>尽管您仍然可以使用`require()` and `module.exports`，但我们鼓励您使用[`import` and `export`]
 
 For example:
 
@@ -420,25 +420,25 @@ class DangerButton extends Component {
 export default DangerButton;
 ```
 
-Be aware of the [difference between default and named exports](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281). It is a common source of mistakes.
+Be aware of the [difference between default and named exports](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281). It is a common source of mistakes.<br>请注意默认导出和命名导出之间的区别。这是错误的常见来源。
 
-We suggest that you stick to using default imports and exports when a module only exports a single thing (for example, a component). That’s what you get when you use `export default Button` and `import Button from './Button'`.
+We suggest that you stick to using default imports and exports when a module only exports a single thing (for example, a component). That’s what you get when you use `export default Button` and `import Button from './Button'`.我们建议您在模块只导出一件东西（例如，一个组件）时坚持使用默认导入和导出。这就是像您使用`export default Button` and `import Button from './Button'`时所获得的结果。
 
-Named exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.
+Named exports are useful for utility modules that export several functions. A module may have at most one default export and as many named exports as you like.<br>命名导出对于导出多个函数的实用程序模块很有用。一个模块最多可以有一个默认导出，并且可以根据您的喜好有多个命名导出
 
-Learn more about ES6 modules:
+Learn more about ES6 modules:  了解有关ES6模块的更多信息
 
 * [When to use the curly braces?](http://stackoverflow.com/questions/36795819/react-native-es-6-when-should-i-use-curly-braces-for-import/36796281#36796281)
 * [Exploring ES6: Modules](http://exploringjs.com/es6/ch_modules.html)
 * [Understanding ES6: Modules](https://leanpub.com/understandinges6/read#leanpub-auto-encapsulating-code-with-modules)
 
-## Code Splitting
+## Code Splitting  代码拆分
 
-Instead of downloading the entire app before users can use it, code splitting allows you to split your code into small chunks which you can then load on demand.
+Instead of downloading the entire app before users can use it, code splitting allows you to split your code into small chunks which you can then load on demand.<br>代码拆分并不是在用户可以使用它之前下载整个应用程序，而是允许您将代码拆分为小块，然后您可以按需加载
 
-This project setup supports code splitting via [dynamic `import()`](http://2ality.com/2017/01/import-operator.html#loading-code-on-demand). Its [proposal](https://github.com/tc39/proposal-dynamic-import) is in stage 3. The `import()` function-like form takes the module name as an argument and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) which always resolves to the namespace object of the module.
+This project setup supports code splitting via [dynamic `import()`](http://2ality.com/2017/01/import-operator.html#loading-code-on-demand). Its [proposal](https://github.com/tc39/proposal-dynamic-import) is in stage 3. The `import()` function-like form takes the module name as an argument and returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) which always resolves to the namespace object of the module.<br>该项目通过设置dynamic import()进行代码分割。它的建议是在阶段3中。类似于import（）函数的表单将模块名称作为参数并返回一个Promise，该Promise始终解析为模块的名称空间对象
 
-Here is an example:
+Here is an example:下面是一个例子：
 
 ### `moduleA.js`
 
@@ -475,9 +475,9 @@ class App extends Component {
 export default App;
 ```
 
-This will make `moduleA.js` and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.
+This will make `moduleA.js` and all its unique dependencies as a separate chunk that only loads after the user clicks the 'Load' button.<br>这将使moduleA.js及其所有独特的依赖成为一个单独的块，只在用户点击'Load'按钮后才加载。 
 
-You can also use it with `async` / `await` syntax if you prefer it.
+You can also use it with `async` / `await` syntax if you prefer it.<br>如果您愿意，也可以将它与`async` / `await`语法一起使用
 
 ### With React Router
 
