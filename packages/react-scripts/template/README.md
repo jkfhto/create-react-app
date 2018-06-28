@@ -109,10 +109,10 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 Create React App is divided into two packages:<br>创建React App分为两个包：
 
-* `create-react-app` is a global command-line utility that you use to create new projects.
-* `react-scripts` is a development dependency in the generated projects (including this one).
+* `create-react-app` is a global command-line utility that you use to create new projects.<br>create-react-app是一个用于创建新项目的全局命令行工具
+* `react-scripts` is a development dependency in the generated projects (including this one).<br>react-scripts是生成的项目（包括这个项目）中的一个开发依赖项
 
-You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.
+You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.<br>几乎从不需要更新create-react-app本身：它将所有设置委托给react-scripts
 
 When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
 
