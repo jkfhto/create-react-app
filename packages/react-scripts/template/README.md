@@ -235,18 +235,19 @@ Also note that using some newer syntax features like `for...of` or `[...nonArray
 
 ## Syntax Highlighting in the Editor  语法在编辑器中突出显示
 
-To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.<br>要在您最喜欢的文本编辑器中配置语法高亮显示，请前往相关的Babel文档页面并按照说明进行操作。涵盖了一些最受欢迎的编辑
+To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.<br>要在您最喜欢的文本编辑器中配置语法高亮显示，请前往[relevant Babel documentation page]页面并按照说明进行操作。涵盖了一些最受欢迎的编辑
 
-## Displaying Lint Output in the Editor
+## Displaying Lint Output in the Editor  在编辑器中显示Lint输出
 
->Note: this feature is available with `react-scripts@0.2.0` and higher.<br>
->It also only works with npm 3 or higher.
+>Note: this feature is available with `react-scripts@0.2.0` and higher.<br>注意：此功能可用于react-scripts@0.2.0和更高版本<br>
+>It also only works with npm 3 or higher.它也只适用于npm 3或更高版本
 
-Some editors, including Sublime Text, Atom, and Visual Studio Code, provide plugins for ESLint.
+Some editors, including Sublime Text, Atom, and Visual Studio Code, provide plugins for ESLint.<br>包括Sublime Text，Atom和Visual Studio Code在内的一些编辑器为ESLint提供插件
 
-They are not required for linting. You should see the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.
+They are not required for linting. You should see the linter output right in your terminal as well as the browser console. However, if you prefer the lint results to appear right in your editor, there are some extra steps you can do.<br>它们不是linting需要的。您应该在终端以及浏览器控制台中看到linter输出。但是，如果您希望lint结果显示在编辑器中，则可以执行一些额外的步骤
 
-You would need to install an ESLint plugin for your editor first. Then, add a file called `.eslintrc` to the project root:
+You would need to install an ESLint plugin for your editor first. Then, add a file called `.eslintrc` to the project root:<br>
+您需要先为您的编辑器安装一个ESLint插件。然后，将一个名为.eslintrc的文件添加到项目根目录中
 
 ```js
 {
@@ -254,23 +255,23 @@ You would need to install an ESLint plugin for your editor first. Then, add a fi
 }
 ```
 
-Now your editor should report the linting warnings.
+Now your editor should report the linting warnings. 现在您的编辑应该报告linting警告。
 
-Note that even if you edit your `.eslintrc` file further, these changes will **only affect the editor integration**. They won’t affect the terminal and in-browser lint output. This is because Create React App intentionally provides a minimal set of rules that find common mistakes.
+Note that even if you edit your `.eslintrc` file further, these changes will **only affect the editor integration**. They won’t affect the terminal and in-browser lint output. This is because Create React App intentionally provides a minimal set of rules that find common mistakes.<br>请注意，即使您进一步编辑.eslintrc文件，这些更改也只会影响编辑器集成。它们不会影响终端和浏览器中的lint输出。这是因为Create React App有意提供了一组寻找常见错误的规则
 
-If you want to enforce a coding style for your project, consider using [Prettier](https://github.com/jlongster/prettier) instead of ESLint style rules.
+If you want to enforce a coding style for your project, consider using [Prettier](https://github.com/jlongster/prettier) instead of ESLint style rules.<br>如果您想为您的项目强制实施编码风格，请考虑使用Prettier而不是ESLint样式规则
 
-## Debugging in the Editor
+## Debugging in the Editor  在编辑器中调试
 
-**This feature is currently only supported by [Visual Studio Code](https://code.visualstudio.com) and [WebStorm](https://www.jetbrains.com/webstorm/).**
+**This feature is currently only supported by [Visual Studio Code](https://code.visualstudio.com) and [WebStorm](https://www.jetbrains.com/webstorm/).**<br>此功能目前仅支持Visual Studio Code和WebStorm
 
-Visual Studio Code and WebStorm support debugging out of the box with Create React App. This enables you as a developer to write and debug your React code without leaving the editor, and most importantly it enables you to have a continuous development workflow, where context switching is minimal, as you don’t have to switch between tools.
+Visual Studio Code and WebStorm support debugging out of the box with Create React App. This enables you as a developer to write and debug your React code without leaving the editor, and most importantly it enables you to have a continuous development workflow, where context switching is minimal, as you don’t have to switch between tools.<br>Visual Studio Code和WebStorm支持使用Create React App进行调试。这使得您可以作为开发人员在不离开编辑器的情况下编写和调试React代码，最重要的是，它使您能够拥有持续开发工作流程，在上下文切换最少的情况下，您无需在工具之间切换
 
 ### Visual Studio Code
 
-You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.
+You would need to have the latest version of [VS Code](https://code.visualstudio.com) and VS Code [Chrome Debugger Extension](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed.<br>您需要安装最新版本的[VS Code]编辑器被为其安装[Chrome Debugger Extension]
 
-Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.
+Then add the block below to your `launch.json` file and put it inside the `.vscode` folder in your app’s root directory.<br>然后将下面的代码块添加到launch.json文件中，并将其放入应用程序根目录中的.vscode文件夹中
 
 ```json
 {
@@ -287,47 +288,48 @@ Then add the block below to your `launch.json` file and put it inside the `.vsco
   }]
 }
 ```
->Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
+>Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).<br>注意：如果您通过[HOST or PORT environment variables]进行了调整，则URL可能会有所不同
 
-Start your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.
+Start your app by running `npm start`, and start debugging in VS Code by pressing `F5` or by clicking the green debug icon. You can now write code, set breakpoints, make changes to the code, and debug your newly modified code—all from your editor.<br>通过运行npm start启动您的应用程序，并通过按F5或单击绿色调试图标开始在VS代码中进行调试。您现在可以通过编辑器编写代码，设置断点，更改代码并调试新修改的代码 
 
-Having problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).
+Having problems with VS Code Debugging? Please see their [troubleshooting guide](https://github.com/Microsoft/vscode-chrome-debug/blob/master/README.md#troubleshooting).<br>VS代码调试有问题吗？请参阅[troubleshooting guide]
 
 ### WebStorm
 
-You would need to have [WebStorm](https://www.jetbrains.com/webstorm/) and [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) Chrome extension installed.
+You would need to have [WebStorm](https://www.jetbrains.com/webstorm/) and [JetBrains IDE Support](https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji) Chrome extension installed.<br>您需要安装WebStorm和JetBrains IDE支持Chrome扩展
 
-In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL field and save the configuration.
+In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and select `JavaScript Debug`. Paste `http://localhost:3000` into the URL field and save the configuration.<br>在WebStorm菜单中选择Edit Configurations ....然后点击+并选择JavaScript Debug。将http：// localhost：3000粘贴到URL字段中并保存配置
 
->Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).
+>Note: the URL may be different if you've made adjustments via the [HOST or PORT environment variables](#advanced-configuration).<br>注意：如果您通过[HOST or PORT environment variables]进行了调整，则URL可能会有所不同
 
-Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
+Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.<br>通过运行npm start来启动您的应用程序，然后在macOS上按^ D或在Windows和Linux上按F9或单击绿色调试图标开始在WebStorm中进行调试
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. <br>使用同样的方法,您可以用IntelliJ IDEA Ultimate，PhpStorm，PyCharm Pro和RubyMine调试应用程序
 
-## Formatting Code Automatically
+## Formatting Code Automatically  自动格式化代码
 
-Prettier is an opinionated code formatter with support for JavaScript, CSS and JSON. With Prettier you can format the code you write automatically to ensure a code style within your project. See the [Prettier's GitHub page](https://github.com/prettier/prettier) for more information, and look at this [page to see it in action](https://prettier.github.io/prettier/).
+Prettier is an opinionated code formatter with support for JavaScript, CSS and JSON. With Prettier you can format the code you write automatically to ensure a code style within your project. See the [Prettier's GitHub page](https://github.com/prettier/prettier) for more information, and look at this [page to see it in action](https://prettier.github.io/prettier/).<br>Prettier是一个支持JavaScript，CSS和JSON的独立代码格式器。使用Prettier可以自动格式化您编写的代码，以确保项目中的代码风格。有关更多信息，请参阅Prettier的GitHub页面，以查看它的实际应用
 
-To format our code whenever we make a commit in git, we need to install the following dependencies:
+To format our code whenever we make a commit in git, we need to install the following dependencies:<br>当我们在git中进行提交时，要格式化我们的代码，我们需要安装以下依赖项
 
 ```sh
 npm install --save husky lint-staged prettier
 ```
 
-Alternatively you may use `yarn`:
+Alternatively you may use `yarn`:<br>
+或者你可以使用`yarn`
 
 ```sh
 yarn add husky lint-staged prettier
 ```
 
-* `husky` makes it easy to use githooks as if they are npm scripts.
-* `lint-staged` allows us to run scripts on staged files in git. See this [blog post about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).
-* `prettier` is the JavaScript formatter we will run before commits.
+* `husky` makes it easy to use githooks as if they are npm scripts.<br>使它很容易使用githooks，就好像它们是npm脚本一样
+* `lint-staged` allows us to run scripts on staged files in git. See this [blog post about lint-staged to learn more about it](https://medium.com/@okonetchnikov/make-linting-great-again-f3890e1ad6b8).<br>允许我们在git中的staged文件上运行脚本
+* `prettier` is the JavaScript formatter we will run before commits.<br>`prettier`是我们将在提交之前运行的JavaScript格式化程序
 
-Now we can make sure every file is formatted correctly by adding a few lines to the `package.json` in the project root.
+Now we can make sure every file is formatted correctly by adding a few lines to the `package.json` in the project root.<br>现在我们可以通过在项目根目录的package.json中添加几行来确保每个文件的格式都正确
 
-Add the following line to `scripts` section:
+Add the following line to `scripts` section:<br>将以下行添加到`scripts`部分
 
 ```diff
   "scripts": {
@@ -336,7 +338,7 @@ Add the following line to `scripts` section:
     "build": "react-scripts build",
 ```
 
-Next we add a 'lint-staged' field to the `package.json`, for example:
+Next we add a 'lint-staged' field to the `package.json`, for example:<br>接下来，我们在package.json中添加一个'lint-staged'字段，例如
 
 ```diff
   "dependencies": {
@@ -351,11 +353,11 @@ Next we add a 'lint-staged' field to the `package.json`, for example:
   "scripts": {
 ```
 
-Now, whenever you make a commit, Prettier will format the changed files automatically. You can also run `./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,json,css}"` to format your entire project for the first time.
+Now, whenever you make a commit, Prettier will format the changed files automatically. You can also run `./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,json,css}"` to format your entire project for the first time.<br>现在，无论何时提交，Prettier都会自动格式化已更改的文件。您也可以运行`./node_modules/.bin/prettier --single-quote --write "src/**/*.{js,jsx,json,css}"`来首次格式化整个项目
 
-Next you might want to integrate Prettier in your favorite editor. Read the section on [Editor Integration](https://prettier.io/docs/en/editors.html) on the Prettier GitHub page.
+Next you might want to integrate Prettier in your favorite editor. Read the section on [Editor Integration](https://prettier.io/docs/en/editors.html) on the Prettier GitHub page.<br>接下来，您可能需要将Prettier整合到您最喜爱的编辑器中。请阅读[Editor Integration]
 
-## Changing the Page `<title>`
+## Changing the Page `<title>`  改变页面<title>
 
 You can find the source HTML file in the `public` folder of the generated project. You may edit the `<title>` tag in it to change the title from “React App” to anything else.
 
