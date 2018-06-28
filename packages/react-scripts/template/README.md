@@ -105,9 +105,9 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 - [Something Missing?](#something-missing)
 
-## Updating to New Releases
+## Updating to New Releases  更新到新版本
 
-Create React App is divided into two packages:
+Create React App is divided into two packages:<br>创建React App分为两个包：
 
 * `create-react-app` is a global command-line utility that you use to create new projects.
 * `react-scripts` is a development dependency in the generated projects (including this one).
