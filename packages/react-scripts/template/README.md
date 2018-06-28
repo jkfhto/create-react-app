@@ -1,7 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).<br>下面你会发现一些关于如何执行常见任务的信息。
+您可以在这里找到本指南的最新版本。
 
 ## Table of Contents
 
