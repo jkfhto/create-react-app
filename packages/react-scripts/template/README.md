@@ -154,14 +154,14 @@ For the project to build, **these files must exist with exact filenames**:<br>�
 
 You can delete or rename the other files.  您可以删除或重命名其他文件。
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>你可以在src里创建子目录。 为了更快地重建，只有src内的文件由Webpack处理。
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>你可以在src里创建子目录。 为了更快地重建，只有src内的文件由Webpack处理。<br>
 You need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.<br>
 您需要将所有的JS和CSS文件放入src中，否则Webpack将不会看到它们
 
-Only files inside `public` can be used from `public/index.html`.<br>public / index.html中只能使用public内的文件
+Only files inside `public` can be used from `public/index.html`.<br>public / index.html中只能使用public内的文件<br>
 Read instructions below for using assets from JavaScript and HTML.<br>阅读下面使用JavaScript和HTML资源的说明
 
-You can, however, create more top-level directories.<br>但是，您可以创建更多顶级目录
+You can, however, create more top-level directories.<br>但是，您可以创建更多顶级目录<br>
 They will not be included in the production build so you can use them for things like documentation.<br>它们不会包含在生产版本中，因此您可以将它们用于文档等内容
 
 ## Available Scripts
