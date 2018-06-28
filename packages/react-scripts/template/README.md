@@ -114,21 +114,21 @@ Create React App is divided into two packages:<br>创建React App分为两个包
 
 You almost never need to update `create-react-app` itself: it delegates all the setup to `react-scripts`.<br>几乎从不需要更新create-react-app本身：它将所有设置委托给react-scripts
 
-When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.
+When you run `create-react-app`, it always creates the project with the latest version of `react-scripts` so you’ll get all the new features and improvements in newly created apps automatically.<br>当您运行create-react-app时，它总是使用react-scripts的最新版本创建项目，以便您在新创建的应用程序中的自动获得所有新功能和改进
 
-To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.
+To update an existing project to a new version of `react-scripts`, [open the changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md), find the version you’re currently on (check `package.json` in this folder if you’re not sure), and apply the migration instructions for the newer versions.<br>要将现有项目更新为react-scripts的新版本，请打开更改日志，查找当前的版本（如果您不确定，请在此文件夹中检查package.json），并为新版本应用迁移说明版本
 
-In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
+In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.<br>在大多数情况下，在package.json中激活react-scripts版本并在该文件夹中运行npm install应该足够了，但最好查阅有关潜在重大更改的更改日志
 
-We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.
+We commit to keeping the breaking changes minimal so you can upgrade `react-scripts` painlessly.<br>我们承诺保持最小的变化，以便您可以无痛地升级react-scripts
 
-## Sending Feedback
+## Sending Feedback  发送反馈
 
-We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).
+We are always open to [your feedback](https://github.com/facebookincubator/create-react-app/issues).  我们随时欢迎您的反馈
 
-## Folder Structure
+## Folder Structure  文件夹结构
 
-After creation, your project should look like this:
+After creation, your project should look like this:<br>创建之后，您的项目应该如下所示：
 
 ```
 my-app/
@@ -147,21 +147,22 @@ my-app/
     logo.svg
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+For the project to build, **these files must exist with exact filenames**:<br>为了正确的构建项目，这些文件必须以确切的文件名存在：
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `public/index.html` is the page template;  页面模板
+* `src/index.js` is the JavaScript entry point.  JavaScript入口文件
 
-You can delete or rename the other files.
+You can delete or rename the other files.  您可以删除或重命名其他文件。
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.
+You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>你可以在src里创建子目录。 为了更快地重建，只有src内的文件由Webpack处理。
+You need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.<br>
+您需要将所有的JS和CSS文件放入src中，否则Webpack将不会看到它们
 
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
+Only files inside `public` can be used from `public/index.html`.<br>public / index.html中只能使用public内的文件
+Read instructions below for using assets from JavaScript and HTML.<br>阅读下面使用JavaScript和HTML资源的说明
 
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
+You can, however, create more top-level directories.<br>但是，您可以创建更多顶级目录
+They will not be included in the production build so you can use them for things like documentation.<br>它们不会包含在生产版本中，因此您可以将它们用于文档等内容
 
 ## Available Scripts
 
