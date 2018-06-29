@@ -700,55 +700,55 @@ The `<script>` tag with the compiled code will be added to it automatically duri
 You can also add other assets to the `public` folder.<br>您还可以将其他资源添加到`public`文件夹
 
 Note that we normally encourage you to `import` assets in JavaScript files instead.
-For example, see the sections on [adding a stylesheet](#adding-a-stylesheet) and [adding images and fonts](#adding-images-fonts-and-files).<br>请注意，通常我们鼓励您改用JavaScript文件导入资源。例如，请参阅[adding a stylesheet]和[adding images and fonts]的章节。
-This mechanism provides a number of benefits:
+For example, see the sections on [adding a stylesheet](#adding-a-stylesheet) and [adding images and fonts](#adding-images-fonts-and-files).
+This mechanism provides a number of benefits:<br>请注意，我们通常鼓励您改用JavaScript文件导入资源。例如，请参阅添加样式表和添加图像和字体的章节。这种机制提供了许多好处
 
-* Scripts and stylesheets get minified and bundled together to avoid extra network requests.
-* Missing files cause compilation errors instead of 404 errors for your users.
-* Result filenames include content hashes so you don’t need to worry about browsers caching their old versions.
+* Scripts and stylesheets get minified and bundled together to avoid extra network requests.<br>脚本和样式表被缩小并捆绑在一起以避免额外的网络请求
+* Missing files cause compilation errors instead of 404 errors for your users.<br>缺少文件会导致编译错误，而不是404用户的错误
+* Result filenames include content hashes so you don’t need to worry about browsers caching their old versions.<br>结果文件名包含内容hashes，因此您不必担心浏览器缓存其旧版本
 
-However there is an **escape hatch** that you can use to add an asset outside of the module system.
+However there is an **escape hatch** that you can use to add an asset outside of the module system.<br>不过，您可以使用**escape hatch**在模块系统外部添加资产
 
-If you put a file into the `public` folder, it will **not** be processed by Webpack. Instead it will be copied into the build folder untouched.   To reference assets in the `public` folder, you need to use a special variable called `PUBLIC_URL`.
+If you put a file into the `public` folder, it will **not** be processed by Webpack. Instead it will be copied into the build folder untouched.   To reference assets in the `public` folder, you need to use a special variable called `PUBLIC_URL`.<br>如果您将文件放入`public`文件夹中，则不会由Webpack处理。相反，它将被复制到build文件夹中。要引用公用文件夹中的资源，您需要使用一个名为PUBLIC_URL`的特殊变量
 
-Inside `index.html`, you can use it like this:
+Inside `index.html`, you can use it like this:<br>在index.html中，你可以像这样使用它
 
 ```html
 <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
 ```
 
-Only files inside the `public` folder will be accessible by `%PUBLIC_URL%` prefix. If you need to use a file from `src` or `node_modules`, you’ll have to copy it there to explicitly specify your intention to make this file a part of the build.
+Only files inside the `public` folder will be accessible by `%PUBLIC_URL%` prefix. If you need to use a file from `src` or `node_modules`, you’ll have to copy it there to explicitly specify your intention to make this file a part of the build.<br>只有`public`文件夹内的文件才能通过`%PUBLIC_URL%`前缀访问。如果您需要使用src或node_modules中的文件，则必须将其复制到该文件中，以明确指定您将此文件作为构建的一部分的意图
 
-When you run `npm run build`, Create React App will substitute `%PUBLIC_URL%` with a correct absolute path so your project works even if you use client-side routing or host it at a non-root URL.
+When you run `npm run build`, Create React App will substitute `%PUBLIC_URL%` with a correct absolute path so your project works even if you use client-side routing or host it at a non-root URL.<br>当您运行npm run build时，创建React App将用正确的绝对路径替换`%PUBLIC_URL%`，因此即使您使用客户端路由或将其托管在非根URL中，您的项目也能正常工作
 
-In JavaScript code, you can use `process.env.PUBLIC_URL` for similar purposes:
+In JavaScript code, you can use `process.env.PUBLIC_URL` for similar purposes:<br>在JavaScript代码中，您可以将process.env.PUBLIC_URL用于类似的目的
 
 ```js
 render() {
-  // Note: this is an escape hatch and should be used sparingly!
-  // Normally we recommend using `import` for getting asset URLs
-  // as described in “Adding Images and Fonts” above this section.
+  // Note: this is an escape hatch and should be used sparingly!注意：这是一个escape hatch，应该谨慎使用
+  // Normally we recommend using `import` for getting asset URLs 通常我们建议使用`import`来获取资产URL
+  // as described in “Adding Images and Fonts” above this section.如本节上方的“Adding Images and Fonts”中所述
   return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
 }
 ```
 
-Keep in mind the downsides of this approach:
+Keep in mind the downsides of this approach:<br>请记住这种方法的缺点
 
-* None of the files in `public` folder get post-processed or minified.
-* Missing files will not be called at compilation time, and will cause 404 errors for your users.
-* Result filenames won’t include content hashes so you’ll need to add query arguments or rename them every time they change.
+* None of the files in `public` folder get post-processed or minified.<br>公共文件夹中的文件都不会被后处理或缩小
+* Missing files will not be called at compilation time, and will cause 404 errors for your users.<br>缺少文件将不会在编译时被调用，并且会导致您的用户发生404错误
+* Result filenames won’t include content hashes so you’ll need to add query arguments or rename them every time they change.<br>结果文件名不会包含内容hashes，所以您需要添加查询参数或每次更改时重命名它们
 
-### When to Use the `public` Folder
+### When to Use the `public` Folder  何时使用公用文件夹
 
 Normally we recommend importing [stylesheets](#adding-a-stylesheet), [images, and fonts](#adding-images-fonts-and-files) from JavaScript.
-The `public` folder is useful as a workaround for a number of less common cases:
+The `public` folder is useful as a workaround for a number of less common cases:<br>通常我们建议从JavaScript导入样式表，图片和字体。公用文件夹可用作许多不常见情况的解决方法
 
-* You need a file with a specific name in the build output, such as [`manifest.webmanifest`](https://developer.mozilla.org/en-US/docs/Web/Manifest).
-* You have thousands of images and need to dynamically reference their paths.
-* You want to include a small script like [`pace.js`](http://github.hubspot.com/pace/docs/welcome/) outside of the bundled code.
-* Some library may be incompatible with Webpack and you have no other option but to include it as a `<script>` tag.
+* You need a file with a specific name in the build output, such as [`manifest.webmanifest`](https://developer.mozilla.org/en-US/docs/Web/Manifest).<br>您需要在构建输出中使用具有特定名称的文件，例如manifest.webmanifest
+* You have thousands of images and need to dynamically reference their paths.<br>你有成千上万的图像，需要动态引用它们的路径
+* You want to include a small script like [`pace.js`](http://github.hubspot.com/pace/docs/welcome/) outside of the bundled code.<br>你想在捆绑代码之外加入一个像[`pace.js`]这样的小脚本
+* Some library may be incompatible with Webpack and you have no other option but to include it as a `<script>` tag.<br>某些库可能与Webpack不兼容，您没有其他选择，只能将其包含为<script>标记
 
-Note that if you add a `<script>` that declares global variables, you also need to read the next section on using them.
+Note that if you add a `<script>` that declares global variables, you also need to read the next section on using them.<br>请注意，如果添加一个声明全局变量的<script>，则还需要阅读下一节有关使用它们的内容
 
 ## Using Global Variables
 
